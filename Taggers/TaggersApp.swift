@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TaggersApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var radio = Radio()
+
+  var body: some Scene {
+    WindowGroup {
+      TagListView(tags: radio.tags)
+        .environmentObject(radio)
     }
+  }
 }

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EEB75E10292841A10068DEE0 /* TaggersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E0F292841A10068DEE0 /* TaggersApp.swift */; };
-		EEB75E12292841A10068DEE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E11292841A10068DEE0 /* ContentView.swift */; };
+		EEB75E12292841A10068DEE0 /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E11292841A10068DEE0 /* TagListView.swift */; };
 		EEB75E14292841A40068DEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB75E13292841A40068DEE0 /* Assets.xcassets */; };
 		EEB75E18292841A40068DEE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB75E17292841A40068DEE0 /* Preview Assets.xcassets */; };
 		EEB75E22292841A40068DEE0 /* TaggersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E21292841A40068DEE0 /* TaggersTests.swift */; };
 		EEB75E2C292841A40068DEE0 /* TaggersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E2B292841A40068DEE0 /* TaggersUITests.swift */; };
 		EEB75E2E292841A40068DEE0 /* TaggersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E2D292841A40068DEE0 /* TaggersUITestsLaunchTests.swift */; };
+		EEB75E3B292841D90068DEE0 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E3A292841D90068DEE0 /* Radio.swift */; };
+		EEB75E3D292843C40068DEE0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB75E3C292843C40068DEE0 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		EEB75E0C292841A10068DEE0 /* Taggers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taggers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB75E0F292841A10068DEE0 /* TaggersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggersApp.swift; sourceTree = "<group>"; };
-		EEB75E11292841A10068DEE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEB75E11292841A10068DEE0 /* TagListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
 		EEB75E13292841A40068DEE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEB75E15292841A40068DEE0 /* Taggers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Taggers.entitlements; sourceTree = "<group>"; };
 		EEB75E17292841A40068DEE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		EEB75E27292841A40068DEE0 /* TaggersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaggersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB75E2B292841A40068DEE0 /* TaggersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggersUITests.swift; sourceTree = "<group>"; };
 		EEB75E2D292841A40068DEE0 /* TaggersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEB75E3A292841D90068DEE0 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		EEB75E3C292843C40068DEE0 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				EEB75E0F292841A10068DEE0 /* TaggersApp.swift */,
-				EEB75E11292841A10068DEE0 /* ContentView.swift */,
+				EEB75E11292841A10068DEE0 /* TagListView.swift */,
 				EEB75E13292841A40068DEE0 /* Assets.xcassets */,
 				EEB75E15292841A40068DEE0 /* Taggers.entitlements */,
 				EEB75E16292841A40068DEE0 /* Preview Content */,
+				EEB75E3A292841D90068DEE0 /* Radio.swift */,
+				EEB75E3C292843C40068DEE0 /* Tag.swift */,
 			);
 			path = Taggers;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB75E12292841A10068DEE0 /* ContentView.swift in Sources */,
+				EEB75E3D292843C40068DEE0 /* Tag.swift in Sources */,
+				EEB75E12292841A10068DEE0 /* TagListView.swift in Sources */,
 				EEB75E10292841A10068DEE0 /* TaggersApp.swift in Sources */,
+				EEB75E3B292841D90068DEE0 /* Radio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -437,7 +446,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasfeijo.Taggers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,6 +468,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Use NFC to Read and Write data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -475,7 +487,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasfeijo.Taggers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
